@@ -27,7 +27,7 @@ export default async function (req, res) {
 
   try {
     const completion = await openai.createCompletion({
-      model: "gpt-4-turbo",
+      model: "gpt-3.5-turbo",
       max_tokens: 2000,
       prompt: generatePrompt(animal),
       temperature: 0.6,
